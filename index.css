@@ -13,21 +13,15 @@ body {
 }
 main {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url(./images/drums-bg.jpg);
-  background-size: cover;
-  background-position: center; */
 }
 .bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-  z-index: -1;
 }
 .bg-image img {
   position: absolute;
@@ -37,6 +31,7 @@ main {
   filter: contrast(1.3) brightness(0.7);
 }
 .drum-pad-ctn {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
